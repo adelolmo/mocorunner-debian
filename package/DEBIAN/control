@@ -1,0 +1,9 @@
+Package: mocorunner
+Version: {{version}}
+Section: java
+Priority: standard
+Architecture: all
+Recommends: oracle-java8-installer | oracle-java8-jre
+Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
+Installed-Size: {{size}}
+Description: Moco is an easy setup stub framework.
