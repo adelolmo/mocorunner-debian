@@ -3,7 +3,18 @@ Debian package for mocorunner. Moco is an easy setup stub framework.
 
 For more details of how moco works: https://github.com/dreamhead/moco
 
-## Usage
+## Dependencies
+
+Moco requires Java to be installed.
+
+## How to Install
+
+```
+$ wget https://github.com/adelolmo/mocorunner-debian/releases/download/mocorunner-debian-0.11.0-1/mocorunner_0.11.0-1_all.deb
+$ sudo dpkg -i mocorunner_0.11.0-1_all.deb
+```
+
+## Usage example
 
 ```
 $ mocorunner start -p 9876 -c moco-config.json
