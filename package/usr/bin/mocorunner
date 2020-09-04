@@ -14,7 +14,7 @@ if [ `id -u` -eq 0 ] && [ "$MOCO_ROOT" = "" ]; then
 fi
 
 export MOCO_HOME=/opt/mocorunner
-MOCO_STANDALONE=$MOCO_HOME/moco-runner-{{moco_version}}-standalone.jar
+MOCO_STANDALONE=$MOCO_HOME/moco-runner-{{version}}-standalone.jar
 
 die() {
     [[ $1 ]] || {
@@ -71,7 +71,6 @@ options:
        help      show help
        start     start server, e.g. moco start -p 12306 -c configfile.json
        shutdown  shutdown moco server 
-       upgrade   upgrade moco
 "
 }
 
@@ -97,7 +96,7 @@ elif [ "$1" = "shutdown" ]; then
     exec "$JAVACMD" -jar "$MOCO_STANDALONE" $*
 elif [ "$1" = "version" ]; then
     load_current_version
-    echo "Moco version: $CURRENT_VERSION"
+    echo "Moco version: {{version}}"
 elif [ "$1" = "help" ]; then
     usage
 else
