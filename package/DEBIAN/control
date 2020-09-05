@@ -1,9 +1,0 @@
-Package: mocorunner
-Version: {{version}}
-Section: java
-Priority: optional
-Architecture: all
-Recommends: openjdk-8-jre
-Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
-Homepage: https://github.com/dreamhead/moco
-Description: Moco is an easy setup stub framework.

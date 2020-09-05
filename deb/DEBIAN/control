@@ -1,0 +1,18 @@
+Package: mocorunner
+Version: {{version}}
+Architecture: all
+Maintainer: Andoni del Olmo <andoni.delolmo@gmail.com>
+Installed-Size: {{size}}
+Priority: optional
+Section: java
+Recommends: openjdk-8-jre
+Homepage: https://github.com/dreamhead/moco
+Description: Moco is an easy setup stub framework.
+ Integration, especially based on HTTP protocol, e.g. web service, REST etc,
+ is wildly used in most of our development.
+ .
+ In the old days, we just deployed another WAR to an application server,
+ e.g. Jetty or Tomcat etc.
+ As we all know, it's so boring to develop a WAR and deploy it to any
+ application server, even if we use an embedded server. And the WAR needs
+ to be reassembled even if we just want to change a little bit.
